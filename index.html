@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Unified Inbox Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { --accent: #2563eb; --text: #1c2024; --muted: #6b7280; --border: #e2e4e8; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    background: #f6f7f9;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 20px 80px; }
+  .logo { width: 64px; height: 64px; border-radius: 16px; margin-bottom: 20px; }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  .tagline { color: var(--muted); font-size: 15px; margin: 0 0 32px; }
+  h2 { font-size: 17px; margin: 36px 0 10px; }
+  p { font-size: 15px; color: #30343a; }
+  ul { font-size: 15px; color: #30343a; padding-left: 20px; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
+  footer a { color: var(--accent); text-decoration: none; }
+  code { background: #eef0f3; padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <img class="logo" src="logo.png" alt="Unified Inbox Search logo">
+  <h1>Unified Inbox Search</h1>
+  <p class="tagline">A personal tool for searching across multiple Gmail inboxes from one place.</p>
+
+  <h2>What this is</h2>
+  <p>
+    Unified Inbox Search is a small, self-hosted application built and used by one person
+    (its developer) to search, read, and lightly manage email across several of their own
+    Gmail accounts without signing into each one separately. It runs entirely on that
+    person's own computer — there is no shared server, no public sign-up, and no other
+    users.
+  </p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Connects to Gmail accounts the owner has personally authorized, using Google's OAuth sign-in.</li>
+    <li>Downloads recent email (subject, sender, recipients, body text, attachments) into a local database so it can be searched instantly.</li>
+    <li>Lets the owner mark messages read or unread, archive them, and apply labels — each action is written back to Gmail through the Gmail API.</li>
+  </ul>
+
+  <h2>Who uses it</h2>
+  <p>
+    Only its developer, across Gmail accounts they themselves own and administer. It is not
+    distributed, not offered to the public, and not intended for use by anyone else.
+  </p>
+
+  <footer>
+    See the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>
+    for details on how account data is handled.
+  </footer>
+</div>
+</body>
+</html>
